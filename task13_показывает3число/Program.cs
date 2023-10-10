@@ -28,3 +28,20 @@ else if (number<100)
 {
     System.Console.WriteLine("Третьей цифры нет(");
 }
+
+/* Не моё решение
+
+int third = 0;
+
+for (int i = number; i > 100; i/=10)
+{
+    third = i % 10;
+}
+if (number < 100)
+{
+    System.Console.WriteLine("Третьей цифры нет");
+}
+else
+{
+    System.Console.WriteLine("Третья цифра: " + third);
+}*/
