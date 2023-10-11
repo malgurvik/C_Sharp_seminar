@@ -10,11 +10,16 @@
 System.Console.WriteLine("Введите цифру, обозначающую день недели: ");
 int dayNumber = Convert.ToInt32(Console.ReadLine());
 
-if (dayNumber == 6 || dayNumber == 7)
+if (dayNumber < 1 || dayNumber > 8)
+{
+    System.Console.WriteLine("Нет такого дня недели!");
+}
+
+else if (dayNumber == 6 || dayNumber == 7)
 {
     System.Console.WriteLine("Да, сегодня выходной!");
 }
 else
 {
-    System.Console.WriteLine("К сожалению нет(");
+    System.Console.WriteLine("К сожалению это будни ");
 }
