@@ -54,11 +54,6 @@ if (reverse == userNumber)
 {
     System.Console.WriteLine("True");
 }
-else if (count != 5)
-{
-    System.Console.WriteLine("Это не пятизначное число, попробуй ещё раз.");
-    System.Console.WriteLine("\t\t\t\t\t False");
-}
 else System.Console.WriteLine("False");
 
 // Version 3 для автотеста
