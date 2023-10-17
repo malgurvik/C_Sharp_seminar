@@ -21,5 +21,8 @@ void PrintArray(int[] arr)
     }
 }
 
-int[] userArray = GetRandomArray(9);
+System.Console.WriteLine("Задай размер массива");
+int userSize = Convert.ToInt32(Console.ReadLine());
+
+int[] userArray = GetRandomArray(userSize);
 PrintArray(userArray);
