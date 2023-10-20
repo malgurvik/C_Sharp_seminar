@@ -7,7 +7,12 @@
 */
 
 Console.Clear();
-
+int UserInOut(string message)
+{
+    System.Console.WriteLine(message);
+    int result = Convert.ToInt32(Console.ReadLine());
+    return result;
+}
 
 int[] GetRandomArray(int size)
 {
@@ -65,7 +70,8 @@ int[] ProductArray(int[] arr)                // метод для перемно
     return res;
 }
 
-int[] userArray = GetRandomArray(6);
+int userSize = UserInOut("Введите размер массива: ");
+int[] userArray = GetRandomArray(userSize);
 PrintArray(userArray);
 System.Console.WriteLine();
 int[] newArray = ProductArray(userArray);
