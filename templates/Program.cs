@@ -10,6 +10,19 @@ int UserInOut(string message)
     return result;
 }
 
+void PrintArray(int[] arr)
+{
 
+    System.Console.Write("[");
+    for (int i = 0; i < arr.Length; i++)
+    {
+        System.Console.Write(arr[i]);
+
+        if (i < arr.Length - 1) System.Console.Write(", ");
+
+    }
+
+    System.Console.Write("]");
+}
 
 

@@ -27,7 +27,7 @@ void PrintArray(int[] arr)
     {
         System.Console.Write(arr[i]);
 
-        if (i < arr.Length - 1) System.Console.Write(", ");// [5, 7, 1, 4
+        if (i < arr.Length - 1) System.Console.Write(", ");
 
     }
 
