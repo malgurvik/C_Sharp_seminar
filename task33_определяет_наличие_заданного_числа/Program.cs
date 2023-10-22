@@ -30,8 +30,7 @@ bool FindNumber(int[] arrFind, int num)
         if (arrFind[i] == num)
         {
             return true;
-        }
-       
+        }   
     }
     return false;
 }
