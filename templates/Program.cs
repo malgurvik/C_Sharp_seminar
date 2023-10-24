@@ -1,5 +1,4 @@
-﻿// Функция ввода-вывода
-
+﻿
 
 Console.Clear();
 
@@ -9,6 +8,7 @@ int UserInOut(string message)
     int result = Convert.ToInt32(Console.ReadLine());
     return result;
 }
+
 
 int[] GetRandomArray(int size)
 {
@@ -32,5 +32,3 @@ void PrintArray(int[] arr)
     System.Console.Write("]");
     System.Console.WriteLine();
 }
-
-
