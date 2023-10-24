@@ -1,5 +1,4 @@
 ﻿
-
 Console.Clear();
 
 int UserInOut(string message)
@@ -32,3 +31,15 @@ void PrintArray(int[] arr)
     System.Console.Write("]");
     System.Console.WriteLine();
 }
+
+
+string UserEnter(string message)
+{
+    System.Console.WriteLine(message);
+    string result = Convert.ToString(Console.ReadLine());
+    return result;
+}
+
+string userInput = UserEnter("Введите числа массива через пробел: ");
+var arString = userInput.Split(' ');
+int[] uArray = Array.ConvertAll(arString, s => int.Parse(s));
