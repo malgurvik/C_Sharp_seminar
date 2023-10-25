@@ -15,14 +15,20 @@ int UserInOut(string message)
     return result;
 }
 
+
+void FindCrossPoint(double a, double b, double c, double d)
+{
+double x = (c - a) / (b - d);
+double y = b * x + a;
+if (b == d) System.Console.WriteLine("Прямые не пересекаются!!!");
+else System.Console.WriteLine($"-> ({x}; {y})");
+}
+
+
+
 double b1 = UserInOut("Введите число b1: ");
 double k1 = UserInOut("Введите число k1: ");
 double b2 = UserInOut("Введите число b2: ");
 double k2 = UserInOut("Введите число k2: ");
+FindCrossPoint(b1, k1, b2, k2);
 
-
-
-double x = (b2 - b1) / (k1 - k2);
-double y = k1 * x + b1;
-if (k1 == k2) System.Console.WriteLine("Прямые не пересекаются!!!");
-else System.Console.WriteLine($"-> ({x}; {y})");
