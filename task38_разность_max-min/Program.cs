@@ -25,7 +25,7 @@ double[] GetArray(int size)
     for (int i = 0; i < size; i++)
     {
         //array[i] = new Random().NextDouble(0, 10);
-        array[i] = rand.Next(0, 10) + rand.NextDouble();
+        array[i] = rand.Next(-10, 10) + rand.NextDouble();
 
     }
     return array;
